@@ -21,7 +21,7 @@
                 <div class="text-container">You <em>know</em> you want to.</div>
             </div>
             <div class="form-subcontainer form">
-                <form action="/send-data" method="post">
+                <form action="/send-data" method="post" id="login-form">
                     <div class="form">
                         <div class="text-container">Let's do this!</div>
                         <div class="form-content">
@@ -56,8 +56,13 @@
                                     <input type="password" id="pw2" name="pw2" required>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </form>
+            </div>
+            <div class="form-subcontainer">
+                <button type="submit" form="login-form">Create Account</button>
+                <div>Already have an account? <a href="" class="log-in">Log in</a></div>
             </div>
         </div>
     </div>
