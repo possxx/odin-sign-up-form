@@ -38,7 +38,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .background-section {
     height: 100vh;
-    width: clamp(400px, 30%, 600px);
+    width: max(35vw, 400px);
     background-image: url("./images/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
     position: relative;
@@ -47,7 +47,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .form-container {
     background-color: hsla(0 0 95 / 1);
     height: 100%;
-    width: clamp(700px, 100%, 100%);
+    width: max(65vw, 600px);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -132,6 +132,13 @@ label {
 input {
     width: 260px;
     height: 28px;
+    border: 1px solid hsla(0 0 0 / 0.2);
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid hsla(253, 100%, 20%, 0.8);
 }
 
 .name,
@@ -147,6 +154,22 @@ input {
 
 .form-content:last-child {
     margin-bottom: 20px;
+}
+
+.password {
+    position: relative;
+}
+
+.password input:invalid {
+    border: 2px solid hsla(0, 96%, 37%, 0.8);
+}
+
+.password input:invalid + span::after {
+    content: "* Passwords do not match";
+    color: hsla(0, 96%, 37%, 0.8);
+    position: absolute;
+    bottom: -28px;
+    left: 0px;
 }
 
 
