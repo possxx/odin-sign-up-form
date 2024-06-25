@@ -7,6 +7,43 @@
     <title>Odin-Sign-Up-Form</title>
 </head>
 <body>
-    
+    <div class="form-section">
+        <div class="background-section">
+            <div class="logo-container">
+                <div class="logo"><img src="./images/odin-lined.png" alt="Odin-Logo"></div>
+                <div class="logo-text">ODIN</div>
+            </div>
+            <div class="credits-container">Photo by <a href="https://unsplash.com/de/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></div>
+        </div>
+        <div class="form-container">
+            <div class="form-subcontainer">
+                <div class="text-container">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</div>
+                <div class="text-container">You <em>know</em> you want to.</div>
+            </div>
+            <div class="form-subcontainer">
+                <form action="/send-data" method="post">
+                    <div class="form">
+                        <div class="text-container">Let's do this!</div>
+                        <div class="form-content">
+                            <div class="name"></div>
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name">
+                            <div class="contact"></div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email">
+                            <label for="tel">PHONE NUMBER</label>
+                            <input type="tel" id="tel" name="tel">
+                            <div class="password"></div>
+                            <label for="pw">PASSWORD</label>
+                            <input type="pw" id="pw" name="pw">
+                            <label for="pw2">CONFIRM PASSWORD</label>
+                            <input type="pw" id="pw2" name="pw2">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
