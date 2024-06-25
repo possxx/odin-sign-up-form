@@ -10,6 +10,7 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    font-family:'Segoe UI', Roboto, Helvetica, system-ui, sans-serif;
 }
 
 img, picture, video, canvas, svg {
